@@ -101,6 +101,6 @@ app.delete("/blogs/:id", function(req, res){
     })
 })
 
-app.listen(4000, function(){
+app.listen(process.env.PORT || 4000, process.env.IP, () => {
     console.log("Server started")
 })
