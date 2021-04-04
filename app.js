@@ -6,7 +6,7 @@ let express = require("express"),
     app = express()
 
 // APP CONFIG
-mongoose.connect("mongodb+srv://Saswat:Password12%23@cluster0.2uveg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true, 'useFindAndModify': false});
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0.2uveg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true, 'useFindAndModify': false});
 app.set("view engine","ejs")
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({extended: true}))
